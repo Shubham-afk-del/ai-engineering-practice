@@ -1,0 +1,11 @@
+# Keys live in .env and never leave this laptop
+.env
+.env.*
+
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+.DS_Store
+
+# Local helper that copies notebooks in from the course folder
+sync_from_course.py
