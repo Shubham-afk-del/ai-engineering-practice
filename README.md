@@ -10,6 +10,7 @@ My practice notebooks from Ed Donner's Agentic AI course, written while I learn 
 | [`day_5_judge.ipynb`](day_5_judge.ipynb) | One `get_client()` for Ollama, Groq and Gemini, the same probability question to three models, and an LLM judge that ranks their answers as JSON. One judge reply came back cut off, probably at `max_tokens`, so `json.loads` failed, and the error is left in |
 | [`chatloop.ipynb`](chatloop.ipynb) | A terminal chat loop that keeps the whole conversation in `messages`, on Azure OpenAI `gpt-5-mini` |
 | [`ollama_chatbot.ipynb`](ollama_chatbot.ipynb) | The same chat loop on a local `qwen2.5:3b` model |
+| [`L04_cv_extractor.ipynb`](L04_cv_extractor.ipynb) | Structured output: a Pydantic `CVinfo` model, its JSON schema passed to a local model with `strict`, and a retry loop that sends validation errors back. The last run extracts three CVs: the format is right every time, but the years of experience are wrong for two of them, which Pydantic cannot catch |
 
 ## Running them
 
